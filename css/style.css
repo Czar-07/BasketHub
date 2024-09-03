@@ -1,0 +1,200 @@
+/* Reseta margens e preenchimentos para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estiliza a linha horizontal (hr) */
+hr {
+    display: block; /* Garante que o hr é exibido como bloco */
+    margin-top: 0.5em; /* Espaço acima da linha */
+    margin-bottom: 0.5em; /* Espaço abaixo da linha */
+    margin-left: auto; /* Margens laterais automáticas para centralizar */
+    margin-right: auto;
+    border-width: 1px; /* Largura da borda da linha */
+    border-color: #ffffff; /* Cor da borda da linha */
+}
+
+/* Estiliza o elemento header */
+header {
+    display: flex; /* Utiliza o layout flexível */
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center; /* Alinha os itens ao centro horizontalmente */
+    padding: 20px; /* Preenchimento interno do header */
+}
+
+/* Estiliza as imagens dentro do header */
+header img {
+    width: 70px; /* Largura da imagem */
+    height: 70px; /* Altura da imagem */
+    margin: 10px; /* Margem ao redor da imagem */
+    display: flex; /* Utiliza o layout flexível */
+    align-items: center; /* Alinha a imagem ao centro verticalmente */
+    margin-bottom: 20px;
+}
+
+/* Estiliza a imagem com id home_img */
+#home_img {
+    width: 800px; /* Largura da imagem */
+    height: 500px; /* Altura da imagem */
+    display: flex; /* Utiliza o layout flexível */
+    border-radius: 30px; /* Bordas arredondadas da imagem */
+    align-items: center; /* Alinha a imagem ao centro verticalmente */
+    text-align: center; /* Alinha o texto dentro da imagem */
+    margin: auto; /* Centraliza a imagem horizontalmente */
+}
+
+/* Estiliza a imagem com id produto_img */
+#produto_img {
+    width: 100px; /* Largura da imagem */
+    height: 100px; /* Altura da imagem */
+    display: flex; /* Utiliza o layout flexível */
+    align-items: center; /* Alinha a imagem ao centro verticalmente */
+    text-align: center; /* Alinha o texto dentro da imagem */
+    margin: auto; /* Centraliza a imagem horizontalmente */
+}
+
+/* Estiliza o título (h1) dentro do header */
+header h1 {
+    color: #000000; /* Cor do texto */
+    -webkit-text-stroke: 1px #ffffff; /* Contorno branco ao redor do texto (para navegadores WebKit) */
+    font-family: Arial, Helvetica, sans-serif; /* Fonte do texto */
+    display: flex; /* Utiliza o layout flexível */
+    align-items: center; /* Alinha o texto ao centro verticalmente */
+}
+
+/* Estiliza os parágrafos dentro do header */
+header p {
+    text-align: center; /* Alinha o texto ao centro */
+    color: #000000; /* Cor do texto */
+    margin-top: 10px; /* Margem superior do parágrafo */
+    font-family: Arial, Helvetica, sans-serif; /* Fonte do texto */
+}
+
+/* Estiliza o elemento com id home */
+#home {
+    background-color: #ff8c00; /* Cor de fundo */
+    padding: 0px; /* Preenchimento interno */
+}
+
+/* Estiliza a lista dentro do menu */
+#menu ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento interno */
+}
+
+/* Estiliza os itens da lista dentro do menu */
+#menu li {
+    list-style: none; /* Remove os marcadores da lista */
+    position: relative; /* Posicionamento relativo para os subitens */
+}
+
+/* Estiliza os links dentro dos itens da lista do menu */
+#menu li a {
+    color: #000000; /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    padding: 5px 10px; /* Preenchimento interno do link */
+    display: block; /* Exibe o link como um bloco */
+}
+
+/* Estiliza os links do menu ao passar o mouse (hover) */
+#menu li a:hover {
+    text-shadow: 0px 0px 5px #ffffff; /* Adiciona uma sombra branca ao texto do link */
+}
+
+/* Estiliza as tabelas */
+table {
+    padding-left: 20px; /* Preenchimento à esquerda da tabela */
+    width: 100%; /* Largura total da tabela */
+}
+
+/* Estiliza as células da tabela */
+table td {
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Estiliza os sub-menus dentro do menu */
+#menu li ul {
+    position: absolute; /* Posiciona os sub-menus de forma absoluta */
+    top: 25px; /* Distância do topo do item pai */
+    left: 0; /* Alinhamento à esquerda do item pai */
+    background-color: #ffffff; /* Cor de fundo do sub-menu */
+    display: none; /* Inicialmente escondido */
+}
+
+/* Exibe o sub-menu quando o item do menu é hover ou está com a classe 'over' */
+#menu li:hover ul, #menu li.over ul {
+    display: block; /* Exibe o sub-menu */
+}
+
+/* Estiliza o header, menu e listas dentro do menu com layout flexível */
+header, #menu, #menu ul {
+    display: flex; /* Utiliza o layout flexível */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+}
+
+/* Estiliza o menu com alinhamento e justificação dos itens */
+#menu {
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+}
+
+/* Estiliza o elemento com id b */
+#b {
+    background-color: #ffffff33; /* Cor de fundo com transparência */
+    border: 2px solid #ff8c0080; /* Cor e espessura da borda com transparência */
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 20px; /* Preenchimento interno */
+    max-width: 800px; /* Largura máxima do contorno */
+    margin: auto; /* Centraliza o elemento horizontalmente */
+    width: 800px; /* Sobrescreve a largura anterior com uma largura fixa */
+    margin-top: 20px;
+}
+
+/* Estiliza o elemento com id b_produtos */
+#b_produtos {
+    background-color: #ffffff33; /* Cor de fundo com transparência */
+    border: 2px solid #ff8c0080; /* Cor e espessura da borda com transparência */
+    padding-left: 50px; /* Preenchimento interno */
+    padding-right: 50px; /* Preenchimento interno */
+    width: 60px; /* Largura do contorno */
+    max-width: 800px; /* Largura máxima do contorno */
+    margin: auto; /* Centraliza o elemento horizontalmente */
+    margin-top: 20px;
+    width: auto; /* Sobrescreve a largura anterior com uma largura fixa */
+}
+
+#b_produtos:hover {
+    background-color: #ff8c00;
+    display: block;
+}
+
+/* Estiliza a linha horizontal (hr) dentro do footer */
+footer hr {
+    margin-top: 1000px; /* Espaço acima da linha (provavelmente para espaçamento do conteúdo anterior) */
+    margin-bottom: 0.5em; /* Espaço abaixo da linha */
+    margin-left: auto; /* Margens laterais automáticas para centralizar */
+    margin-right: auto;
+    border-style: inset; /* Estilo da borda */
+    border-width: 1px; /* Largura da borda */
+    border-color: #000000; /* Cor da borda */
+}
+
+/* Estiliza as imagens dentro do footer */
+footer img {
+    width: 100px; /* Largura da imagem */
+    height: 100px; /* Altura da imagem */
+    margin-right: 20px; /* Margem à direita da imagem */
+    display: flex; /* Utiliza o layout flexível */
+    align-items: center; /* Alinha a imagem ao centro verticalmente */
+}
+
+/* Estiliza o título (h1) dentro do footer */
+footer h1 {
+    color: #000000; /* Cor do texto */
+    -webkit-text-stroke: 2px #ffffff; /* Contorno branco ao redor do texto (para navegadores WebKit) */
+    font-family: Arial, Helvetica, sans-serif; /* Fonte do texto */
+    margin-right: 0; /* Remove a margem direita */
+    display: flex; /* Utiliza o layout flexível */
+    align-items: center; /* Alinha o texto ao centro verticalmente */
+}
